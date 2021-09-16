@@ -295,11 +295,14 @@
   loaded = false;
 
   wait = function() {
-    if (!loaded) {
-      loaded = true;
-      return setTimeout(collect, 1);
-    }
-  };
+    
+  }
+  // wait = function() {
+  //   if (!loaded) {
+  //     loaded = true;
+  //     return setTimeout(collect, 1);
+  //   }
+  // };
 
   if (document.readyState === 'complete') {
     wait();
